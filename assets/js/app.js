@@ -11,16 +11,21 @@ $(document).ready(function(){
 		$('#wrapper').toggleClass('opened');
 		return false;
 	});
-	$("#icon-menu-respon").on('click',function(){
+	$("#icon-menu-respon").click(function(){
 		$("#wrapper").click(function(){
 			$('#site').removeClass('open-menu-respon')
 			$('#icon-menu-respon').removeClass('fa-times').addClass('fa-navicon');
-			$('#wrapper').removeClass('opened')
+			$(this).removeClass('opened')
+			// return false;
 		});
-		return false;
+		// return false;
 	});
 
-	
+	$(window).scroll(function(){
+		$("#site").removeClass('open-menu-respon');
+		$("#icon-menu-respon").removeClass('fa-times').addClass('fa-navicon');
+		$('#wrapper').removeClass('opened');
+	});
 	$(".has-sub-menu").click(function(){
 		$('#sub-menu').slideToggle();
 		return false;
