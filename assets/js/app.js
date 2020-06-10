@@ -6,19 +6,17 @@ $(document).ready(function(){
 		return false;
 	});
 	$("#icon-menu-respon").click(function(){
+		$(".wp-mark").css({'display' : 'block'})
 		$('#icon-menu-respon').toggleClass('fa fa-navicon fa fa-times');
 		$('#site').toggleClass('open-menu-respon');
 		$('#wrapper').toggleClass('opened');
 		return false;
 	});
-	$("#icon-menu-respon").click(function(){
-		$("#wrapper").click(function(){
-			$('#site').removeClass('open-menu-respon')
-			$('#icon-menu-respon').removeClass('fa-times').addClass('fa-navicon');
-			$(this).removeClass('opened')
-			// return false;
-		});
-		// return false;
+	$(".wp-mark").click(function(){
+		$(".wp-mark").css({'display' : 'none'})
+		$('#site').removeClass('open-menu-respon')
+		$('#icon-menu-respon').removeClass('fa-times').addClass('fa-navicon');
+		$("#wrapper").removeClass('opened')
 	});
 
 	$(window).scroll(function(){

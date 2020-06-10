@@ -1,5 +1,5 @@
  @media screen and (max-width: 9999px){
-        #footer,#header{
+        #footer,#header,#wp-breadcrumb{
             padding: 0px 11px;
             width: 100%;
         }
@@ -11,6 +11,7 @@
         width: 100%;
     }
        #header{
+           
         text-align: center;
     }
     #main-menu{ display: none; }
@@ -31,6 +32,7 @@
     #wp-content{
         padding: 0px 20px;
     }
+
     #content{
         padding-right: 0;
     }
@@ -47,10 +49,7 @@
             width: 48%;
             float: left;
         }
-        .post-infor{
-            width: 48%;
-            float: right;
-        }
+     
         #content .post-cover .post-title a{
             margin: 0px 0px 15px 0px;
         }
@@ -84,7 +83,7 @@
     }
     @media screen and (max-width: 916px){
         #widget-new{
-            padding: 0 27px 0 0;;
+            padding: 0 27px 0 0;
         }
         #widget-fanpage {
             width: 292px;
@@ -127,6 +126,16 @@
     }
 /* Ipad dọc 768x1024 */
     @media screen and (max-width: 768px){
+        #list-post li{
+            display: block;
+        }
+        #list-post li a img{
+            width: 100%;
+            height: auto;
+        }
+        #list-post li .post-content{
+            padding: 0;
+        }
         .post-thumb{
             width: 100%;
             float: none;
@@ -137,35 +146,14 @@
             height: auto;
         }
           
-          .post-infor{
+        #widget-cover  .post-infor{
               float: none;
               width: 100%;
           }
-          #content .widget-cover ul.list-post-cover{
+          #content  ul.list-post-cover{
              display: none;
           }
-          #post-feature{
-              width: 100%;
-              float: none;
-          }
-          .post-detail{
-              display: flex;
-          }
-          #post-feature .post-desc {
-              width: 100%;
-              float: none;
-              padding-left: 15px;
-              display: block;
-          }
-          #widget-content ul.list-post-feature {
-              width: 100%;
-              display: flex;
-              margin: 15px 0px 0px 0px;
-          }
-          #widget-content ul.list-post-feature li{
-              margin: 0;
-          }
-       
+        
       
     }
 /* Tablet nhỏ(480x640) */
