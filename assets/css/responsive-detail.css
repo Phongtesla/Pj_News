@@ -1,0 +1,72 @@
+ @media screen and (max-width: 9999px){
+        #footer,#header,#wp-breadcrumb{
+            padding: 0px 11px;
+            width: 100%;
+        }
+    }
+/* Ipad ngang 1024x768 */
+    @media screen and (max-width: 1024px){
+       /* ----------------------HEADER--------------------- */
+       .wp-inner{
+        width: 100%;
+    }
+       #header{
+        text-align: center;
+    }
+    #main-menu{ display: none; }
+    #logo{
+        display: inline-block;
+        float: none;
+    }
+    #logo a{
+     padding-bottom: 16px;
+    }
+   #box-search input{
+       display: none;
+   }
+   #box-search i{
+    font-size: 23px;
+   }
+    /* ---------------------CONTENT------------------ */
+    #wp-content{
+        padding: 0px 20px;
+    }
+
+    #content{
+        padding-right: 0;
+    }
+    #sidebar{
+        display: none;
+    }
+    #content{
+        width: 100%;
+    }
+    #content .widget-cover .post-cover{
+            width: 100%;
+        }
+        #widget-cover img{
+            width: 100%;
+            height: auto;
+        }
+        .post-detail p{
+            width: 100%;
+        }
+        #wp-menu-respon{
+            position: fixed;
+            z-index: 101;
+        }
+        #icon-menu-respon{
+            top: 27px;
+            left: 261px;
+            display: block;
+        }
+    }
+    @media screen and (max-width: 916px){
+        #widget-new{
+            padding: 0 27px 0 0;
+        }
+        #widget-fanpage {
+            width: 292px;
+            padding: 0 0 14px 0;
+        }
+    }
